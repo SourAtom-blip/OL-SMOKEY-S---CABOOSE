@@ -32,10 +32,11 @@ export default function Navbar() {
         ))}
       </div>
       <a
-        href="#order"
-        className="hidden md:inline-flex bg-primary-container text-on-primary hover:bg-secondary transition-colors px-6 py-3 uppercase font-label-bold text-label-bold rounded"
+        href="tel:+15593477314"
+        className="hidden md:inline-flex items-center gap-2 bg-primary-container text-on-primary hover:bg-secondary transition-colors px-6 py-3 uppercase font-label-bold text-label-bold rounded"
       >
-        Order Online
+        <span className="material-symbols-outlined text-[18px]">call</span>
+        Call to Order
       </a>
       <button className="md:hidden text-primary">
         <span className="material-symbols-outlined">menu</span>
