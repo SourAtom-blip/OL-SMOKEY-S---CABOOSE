@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us - Ol' Smokey's</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&amp;family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#1a1c1a",
+                      "on-error-container": "#93000a",
+                      "inverse-surface": "#2f312f",
+                      "primary-fixed": "#e5e2e1",
+                      "outline-variant": "#c4c7c7",
+                      "surface-dim": "#dbdad7",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#efeeeb",
+                      "inverse-primary": "#c8c6c5",
+                      "tertiary-fixed": "#ffdcbd",
+                      "surface-tint": "#5f5e5e",
+                      "on-tertiary-fixed": "#2c1600",
+                      "on-error": "#ffffff",
+                      "tertiary": "#140700",
+                      "tertiary-fixed-dim": "#f0bd8b",
+                      "on-background": "#1a1c1a",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#641d00",
+                      "on-tertiary-fixed-variant": "#623f18",
+                      "on-secondary-fixed-variant": "#822800",
+                      "secondary": "#a93702",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#faf9f6",
+                      "surface-variant": "#e3e2e0",
+                      "on-primary-fixed-variant": "#474746",
+                      "error-container": "#ffdad6",
+                      "outline": "#747878",
+                      "surface-container-high": "#e9e8e5",
+                      "on-secondary-fixed": "#380c00",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-primary-fixed": "#1b1c1c",
+                      "surface-container-highest": "#e3e2e0",
+                      "primary-container": "#212121",
+                      "background": "#faf9f6",
+                      "secondary-fixed-dim": "#ffb59c",
+                      "on-primary-container": "#898888",
+                      "surface-container-low": "#f4f3f1",
+                      "inverse-on-surface": "#f2f1ee",
+                      "surface": "#faf9f6",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "secondary-container": "#fe7440",
+                      "primary": "#0a0a0a",
+                      "on-tertiary-container": "#ac7f52",
+                      "on-surface-variant": "#444748",
+                      "secondary-fixed": "#ffdbcf",
+                      "tertiary-container": "#341b00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "item-gap": "24px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "section-gap": "80px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Montserrat"
+                      ],
+                      "headline-sm": [
+                              "Domine"
+                      ],
+                      "headline-md": [
+                              "Domine"
+                      ],
+                      "label-bold": [
+                              "Montserrat"
+                      ],
+                      "body-lg": [
+                              "Montserrat"
+                      ],
+                      "caption": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Domine"
+                      ],
+                      "display-lg": [
+                              "Domine"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "42px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+<style>
+        .texture-overlay {
+            position: absolute;
+            inset: 0;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            pointer-events: none;
+        }
+        .rough-edge {
+            text-shadow: 1px 1px 0px rgba(0,0,0,0.8), -1px -1px 0px rgba(0,0,0,0.8), 1px -1px 0px rgba(0,0,0,0.8), -1px 1px 0px rgba(0,0,0,0.8);
+        }
+      </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col pt-[88px]">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-background border-b-2 border-outline-variant max-w-7xl mx-auto shadow-none">
+<div class="font-headline-md text-headline-md font-bold text-on-background">Ol' Smokey's</div>
+<div class="hidden md:flex gap-item-gap items-center font-body-md text-body-md">
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Home</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Menu</a>
+<a class="text-secondary font-bold border-b-2 border-secondary translate-y-px transition-all duration-100" href="#">About</a>
+<a class="text-on-surface-variant hover:text-secondary transition-colors" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-bold text-label-bold uppercase px-6 py-3 rounded hover:bg-[#B7410E] transition-colors border-2 border-transparent">
+            Order Online
+        </button>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[614px] md:h-[716px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A moody, high-contrast photograph of the interior of a massive steel meat smoker. Plumes of thick, aromatic oak smoke billow around racks of perfectly barked briskets and ribs. The lighting is dramatic, highlighting the rich, dark crust on the meat and the intense heat of the glowing embers below. The aesthetic is rustic, authentic, and tactile, conveying a sense of master craftsmanship in a premium smokehouse." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBMTBdD-a0P9TVjZl9e2wQc3Cm62rMbBBANqc8QPn5MYJAoc8ToeicA7lX-ViPpcMD10_409SadTWheGF1jIBGrtn91Vp-pMFObEQNEerBbFqmA22jkgvVfLvKOBbKeC5AUz1VuYl-ckRbfdJCHxGE56azWiG_iPfzRaLfsz2xlKFTO7GBtF8RU6zXDAZfpdQx9Csbe2loa1A_GqJqYBBC48xhghpavP7gPNdW4QPhEr7Jv4uKvZ9BymQ')"></div>
+<div class="absolute inset-0 bg-primary/70"></div>
+<div class="relative z-10 text-center px-gutter max-w-4xl mx-auto">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-surface-bright rough-edge uppercase tracking-wide mb-6">The Smoke Behind the Flavor</h1>
+<p class="font-body-lg text-body-lg text-surface-variant md:px-20">Yokuts Valley, CA | A Reputation Forged in Fire</p>
+<div class="mt-8 flex justify-center items-center gap-2 text-secondary-fixed">
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star_half</span>
+<span class="font-label-bold text-label-bold text-surface-bright ml-2">4.2 Star Rating</span>
+</div>
+</div>
+</section>
+<!-- Narrative Section -->
+<section class="py-section-gap px-gutter max-w-7xl mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-item-gap items-center">
+<div class="md:col-span-5 relative">
+<div class="absolute inset-0 bg-tertiary-fixed translate-x-4 translate-y-4 rounded-sm"></div>
+<div class="relative z-10 w-full aspect-square bg-cover bg-center border border-[#D4A373] shadow-[4px_4px_0px_0px_#212121]" data-alt="A beautifully composed daytime photograph of a rustic restaurant built into a converted vintage train caboose. The exterior features weathered wood, corrugated metal, and a large custom steel smoker puffing white smoke in the foreground. Set against the rural backdrop of Yokuts Valley, California. The aesthetic is tactile and heritage-driven, emphasizing grounded, physical materials." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBQLpfHIL4cdjeTam1aXr-5-0-YNsn4uR8rhZpTCEM2S8Bb-HSt19oyYLqBPj5yANSCF4XTWZC6GgyzbGD9LvFbYMX1g3TOUP6bSyUisD6-7EdxMu2lBmrVsg9XEesm01qtSm4fsXGLsR1euDiovisWNwaGZJRaCLZWjMqd1-OjSm-zjpnX4seh5tOLr_0eQDQ6yaMqdzIXv0KdeWjLg0pIugLsKnqMPPlLIQ5kevZnSy1CaITzXZxL1w')"></div>
+</div>
+<div class="md:col-span-7 md:pl-10 mt-8 md:mt-0">
+<div class="inline-block border-2 border-primary-container px-4 py-1 mb-6 rounded-sm">
+<span class="font-label-bold text-label-bold uppercase tracking-widest text-primary-container">Our Heritage</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-primary-container mb-6">The Caboose Experience</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">
+                        Nestled in the heart of Yokuts Valley, CA, Ol' Smokey's isn't just a restaurant; it's a destination. Operating out of a meticulously restored vintage train caboose, we've built our legacy on the uncompromising principles of traditional Central Texas barbecue infused with West Coast ruggedness.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                        We don't rely on shortcuts. Every piece of meat that crosses our cutting block has been perfectly seasoned with our proprietary rub and slow-smoked over aged local oak. It's a labor of love that requires patience, precision, and an intuitive understanding of the fire.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Bento Grid Visuals -->
+<section class="py-section-gap bg-surface-container-low px-gutter border-y border-outline-variant relative">
+<div class="texture-overlay"></div>
+<div class="max-w-7xl mx-auto">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-primary-container">Crafted by Fire</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[250px]">
+<div class="md:col-span-2 md:row-span-2 bg-cover bg-center rounded-sm border border-[#D4A373] relative group overflow-hidden" data-alt="A close-up, macro photograph of thick-sliced, perfectly smoked brisket resting on brown butcher paper. The meat features a pronounced dark, peppery bark and a vibrant pink smoke ring just beneath the surface. Juices pool slightly on the paper. The lighting is warm and directional, emphasizing the rich texture and culinary craftsmanship. The style is rustic, heavy, and premium." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCqrMrtWI9BnW6sdw1myRDBt8N8qnw0YJOv7Fv15JZKaJXHWx8xVnq1SCuF2-OP7M-lz8onKplwFmHOOp2tG19I3IT7uekcxk6oEq2TlbowZ9YTyVXI2a6r6rDqAk3y8e3_9OwBb1R1LgZRGGrzQ3q0b2sOEQlLtPCEhW8Mx0GyM4C5gFryZBxnJjfFdyGsIW50WYTqlRPZKmw2iHkL6NN6Cvs15ILVCRXDS-5L9bdUMQI4-71enHFXtg')">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300"></div>
+<div class="absolute bottom-6 left-6 bg-surface-bright px-4 py-2 rounded-sm border border-primary-container">
+<span class="font-label-bold text-label-bold uppercase">Perfectly Seasoned</span>
+</div>
+</div>
+<div class="bg-cover bg-center rounded-sm border border-[#D4A373] relative group overflow-hidden" data-alt="A candid, action-oriented photograph of a master pitmaster tending to a massive offset smoker. The pitmaster, wearing a leather apron and heavy heat-resistant gloves, is using a long iron tool to adjust glowing oak logs inside the firebox. Sparks fly upward in the dim light. The image conveys dedication, heat, and physical labor. The color palette features deep blacks, ash greys, and ember oranges." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA7xFri3ECFCxxeXRcvvwd7h1oAnuAM3ZkzA1kUNIBTl79LWdN-i7BCwe6b0WDHW6GxVBJYIzCAU68twkDExMcD9117qZb2YXOIvOuFykj3OASeZVFsKTWSVyT4d9lEPTMSIln9tmZ04EuPvUIhUsvPXUDsuZBDGT6WWWREYTmxs8nFBgzsBgypvnQXfOMf3_mUuGoQsJmCvQS8i82qyZbEINNlOtioyq-cWmMGkG54mUfIo-MaF_Jpgw')">
+<div class="absolute inset-0 bg-primary/20 group-hover:bg-transparent transition-all duration-300"></div>
+</div>
+<div class="bg-primary-container text-surface-bright p-8 flex flex-col justify-center rounded-sm relative overflow-hidden">
+<span class="material-symbols-outlined text-[48px] text-[#B7410E] mb-4" data-icon="local_fire_department">local_fire_department</span>
+<h3 class="font-headline-sm text-headline-sm mb-2">The Pit Team</h3>
+<p class="font-body-md text-body-md text-surface-variant">Dedicated professionals who treat every shift like a performance. No compromises.</p>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-gutter flex flex-col md:flex-row justify-between items-start gap-item-gap bg-primary text-on-primary border-t-2 border-[#D4A373]">
+<div class="flex flex-col gap-4">
+<span class="font-headline-sm text-headline-sm text-primary-fixed">Ol' Smokey's</span>
+<span class="font-body-md text-body-md text-primary-fixed-dim">© 2024 Ol' Smokey's - Caboose. Yokuts Valley, CA</span>
+</div>
+<div class="flex flex-col gap-2 font-label-bold text-label-bold">
+<a class="text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">Hours: Open until 8 PM</a>
+<a class="text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">+1 559-347-7314</a>
+<a class="text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">Facebook</a>
+<a class="text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">Instagram</a>
+</div>
+</footer>
+</body></html>

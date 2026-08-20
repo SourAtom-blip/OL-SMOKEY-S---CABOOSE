@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact &amp; Location - Ol' Smokey's Caboose</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&amp;family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-surface": "#1a1c1a",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#2f312f",
+                        "primary-fixed": "#e5e2e1",
+                        "outline-variant": "#c4c7c7",
+                        "surface-dim": "#dbdad7",
+                        "on-secondary": "#ffffff",
+                        "surface-container": "#efeeeb",
+                        "inverse-primary": "#c8c6c5",
+                        "tertiary-fixed": "#ffdcbd",
+                        "surface-tint": "#5f5e5e",
+                        "on-tertiary-fixed": "#2c1600",
+                        "on-error": "#ffffff",
+                        "tertiary": "#140700",
+                        "tertiary-fixed-dim": "#f0bd8b",
+                        "on-background": "#1a1c1a",
+                        "on-primary": "#ffffff",
+                        "on-secondary-container": "#641d00",
+                        "on-tertiary-fixed-variant": "#623f18",
+                        "on-secondary-fixed-variant": "#822800",
+                        "secondary": "#a93702",
+                        "on-tertiary": "#ffffff",
+                        "surface-bright": "#faf9f6",
+                        "surface-variant": "#e3e2e0",
+                        "on-primary-fixed-variant": "#474746",
+                        "error-container": "#ffdad6",
+                        "outline": "#747878",
+                        "surface-container-high": "#e9e8e5",
+                        "on-secondary-fixed": "#380c00",
+                        "primary-fixed-dim": "#c8c6c5",
+                        "on-primary-fixed": "#1b1c1c",
+                        "surface-container-highest": "#e3e2e0",
+                        "primary-container": "#212121",
+                        "background": "#faf9f6",
+                        "secondary-fixed-dim": "#ffb59c",
+                        "on-primary-container": "#898888",
+                        "surface-container-low": "#f4f3f1",
+                        "inverse-on-surface": "#f2f1ee",
+                        "surface": "#faf9f6",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "secondary-container": "#fe7440",
+                        "primary": "#0a0a0a",
+                        "on-tertiary-container": "#ac7f52",
+                        "on-surface-variant": "#444748",
+                        "secondary-fixed": "#ffdbcf",
+                        "tertiary-container": "#341b00"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "item-gap": "24px",
+                        "margin-mobile": "20px",
+                        "margin-desktop": "64px",
+                        "section-gap": "80px",
+                        "base": "8px"
+                    },
+                    "fontFamily": {
+                        "body-md": ["Montserrat"],
+                        "headline-sm": ["Domine"],
+                        "headline-md": ["Domine"],
+                        "label-bold": ["Montserrat"],
+                        "body-lg": ["Montserrat"],
+                        "caption": ["Montserrat"],
+                        "display-lg-mobile": ["Domine"],
+                        "display-lg": ["Domine"]
+                    },
+                    "fontSize": {
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-sm": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "headline-md": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-bold": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "500" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "42px", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .rough-edge {
+            filter: url(#roughpaper);
+        }
+        .texture-overlay {
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased relative min-h-screen flex flex-col">
+<!-- SVG Filter for Rough Edges -->
+<svg class="absolute hidden" height="0" width="0">
+<filter id="roughpaper">
+<feturbulence basefrequency="0.04" numoctaves="5" result="noise" type="fractalNoise"></feturbulence>
+<fedisplacementmap in="SourceGraphic" in2="noise" scale="2" xchannelselector="R" ychannelselector="G"></fedisplacementmap>
+</filter>
+</svg>
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-background dark:bg-on-surface max-w-7xl mx-auto border-b-2 border-outline-variant dark:border-outline flat no shadows">
+<div class="font-headline-md text-headline-md font-bold text-on-background dark:text-surface-bright">
+            Ol' Smokey's
+        </div>
+<div class="hidden md:flex gap-item-gap items-center">
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-container transition-colors focus:translate-y-px transition-all duration-100" href="#">Home</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-container transition-colors focus:translate-y-px transition-all duration-100" href="#">Menu</a>
+<a class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-container transition-colors focus:translate-y-px transition-all duration-100" href="#">About</a>
+<a class="font-body-md text-body-md text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary focus:translate-y-px transition-all duration-100" href="#">Contact</a>
+</div>
+<button class="bg-primary-container text-on-primary font-label-bold text-label-bold uppercase px-6 py-3 rounded hover:bg-[#B7410E] transition-colors">
+            Order Online
+        </button>
+</nav>
+<!-- Main Content -->
+<main class="flex-grow pt-[100px] px-margin-mobile md:px-margin-desktop max-w-7xl mx-auto w-full">
+<!-- Hero Section -->
+<section class="relative w-full h-[409px] md:h-[512px] mb-section-gap rough-edge overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A rustic, atmospheric exterior shot of a barbecue joint named Ol' Smokey's Caboose. The building resembles a vintage train caboose, with weathered wood and metal details. Warm, inviting light spills from the windows into the dusky evening. Smoke gently billows from a large smoker nearby. The scene is shot with a cinematic, high-contrast style, emphasizing the deep shadows and warm, glowing highlights. The mood is authentic and inviting." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC5ovxBpqQX2dIq94eVs2vuyUfRulDIAZoWSpbGz_qYUsOwxdJg51R4YeYVU3d4L1xbijRwZ3wC3rH2SXDZEPA60jxJrw_zW-JJhAu7U1-uXEZWy1Qr0vwTXi3sJrZnIQQzrUjEVrQPcLrgiJYpbEGVAOZzVUUPo5-v2_0OwJRYocT3nYmFN4X_XXGLZUo_3rtk5OmI5FIqmMUP9GAuyMCI1np1X-AOtwnDF0e4S4uY-_GKqaGT4zaNyg')"></div>
+<div class="absolute inset-0 bg-primary/60 mix-blend-multiply"></div>
+<div class="absolute inset-0 flex items-center justify-center">
+<h1 class="font-display-lg-mobile md:font-display-lg text-on-primary text-center tracking-tight px-4 shadow-sm">Visit the Caboose.</h1>
+</div>
+</section>
+<!-- Bento Grid Layout for Contact Info -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-item-gap mb-section-gap">
+<!-- Map Container -->
+<div class="md:col-span-8 bg-surface-container rounded-DEFAULT border border-[#D4A373] p-1 relative overflow-hidden h-[400px] md:h-[500px]">
+<img alt="Map of Yokuts Valley" class="w-full h-full object-cover rough-edge" data-location="Yokuts Valley, CA" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBIE5juJuOBvwf-2yi0-Cw5PRHOlA1uR5k5OwEQZyWb51OCh1cwT7nGg-3V9Ak0U_I0imfeAwPY0SO_R3rsLBie91BCgNwrycS67jgtSemjrbsADazf4RPcbtelOwO3hSQphJVef_6aeqJWYaiuucuv9qm_XXKBiSW1T6ApBOD-3YnxAzbspq6DGdt3IOyDCDeXAlzwPH3sq7eDZFee-_zdYnTIGeCbZwDm_SRMBBwBICuiHc7b3LvOcQ"/>
+<div class="absolute inset-0 texture-overlay pointer-events-none"></div>
+</div>
+<!-- Info Container -->
+<div class="md:col-span-4 flex flex-col gap-item-gap">
+<!-- Address Card -->
+<div class="bg-surface-container p-6 border border-[#D4A373] relative">
+<div class="absolute inset-0 texture-overlay pointer-events-none opacity-50"></div>
+<div class="flex items-start gap-4 mb-4">
+<span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">location_on</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-2 text-on-surface">Location</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Yokuts Valley, CA 93675,<br/>United States</p>
+</div>
+</div>
+<button class="w-full bg-primary-container text-on-primary font-label-bold text-label-bold uppercase px-4 py-3 border-2 border-primary-container hover:bg-[#B7410E] hover:border-[#B7410E] transition-colors mt-4">
+                        Directions
+                    </button>
+</div>
+<!-- Contact & Hours Card -->
+<div class="bg-surface-container p-6 border border-[#D4A373] relative flex-grow flex flex-col justify-between">
+<div class="absolute inset-0 texture-overlay pointer-events-none opacity-50"></div>
+<div class="flex flex-col gap-6 relative z-10">
+<div class="flex items-center gap-4 border-b-2 border-[#D4A373] pb-4">
+<span class="material-symbols-outlined text-secondary">phone</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1 text-on-surface">Phone</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">+1 559-347-7314</p>
+</div>
+</div>
+<div class="flex items-center gap-4 border-b-2 border-[#D4A373] pb-4">
+<span class="material-symbols-outlined text-secondary">schedule</span>
+<div>
+<h3 class="font-headline-sm text-headline-sm mb-1 text-on-surface">Hours</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Open until 8 PM</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-2 pt-2">
+<span class="border border-primary-container text-primary-container px-3 py-1 font-label-bold text-caption uppercase rounded-sm bg-surface">Dine-in</span>
+<span class="border border-primary-container text-primary-container px-3 py-1 font-label-bold text-caption uppercase rounded-sm bg-surface">Takeout</span>
+</div>
+</div>
+<button class="w-full bg-transparent text-[#D4A373] font-label-bold text-label-bold uppercase px-4 py-3 border-2 border-[#D4A373] hover:bg-surface-variant transition-colors mt-6 relative z-10">
+                        Call Now
+                    </button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-gutter flex flex-col md:flex-row justify-between items-start gap-item-gap bg-primary dark:bg-surface-container-highest text-on-primary dark:text-on-surface flat no shadows full-width">
+<div class="flex flex-col gap-4">
+<div class="font-headline-sm text-headline-sm text-primary-fixed">
+                Ol' Smokey's
+            </div>
+<p class="font-body-md text-body-md text-primary-fixed-dim">© 2024 Ol' Smokey's - Caboose. Yokuts Valley, CA</p>
+</div>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex flex-col gap-2">
+<span class="font-label-bold text-label-bold text-secondary-fixed">Info</span>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">Hours: Open until 8 PM</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">+1 559-347-7314</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-bold text-label-bold text-secondary-fixed">Social</span>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">Facebook</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-secondary-container transition-colors focus:outline-none focus:underline" href="#">Instagram</a>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Menu - Ol' Smokey's</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&amp;family=Montserrat:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-surface": "#1a1c1a",
+                      "on-error-container": "#93000a",
+                      "inverse-surface": "#2f312f",
+                      "primary-fixed": "#e5e2e1",
+                      "outline-variant": "#c4c7c7",
+                      "surface-dim": "#dbdad7",
+                      "on-secondary": "#ffffff",
+                      "surface-container": "#efeeeb",
+                      "inverse-primary": "#c8c6c5",
+                      "tertiary-fixed": "#ffdcbd",
+                      "surface-tint": "#5f5e5e",
+                      "on-tertiary-fixed": "#2c1600",
+                      "on-error": "#ffffff",
+                      "tertiary": "#140700",
+                      "tertiary-fixed-dim": "#f0bd8b",
+                      "on-background": "#1a1c1a",
+                      "on-primary": "#ffffff",
+                      "on-secondary-container": "#641d00",
+                      "on-tertiary-fixed-variant": "#623f18",
+                      "on-secondary-fixed-variant": "#822800",
+                      "secondary": "#a93702",
+                      "on-tertiary": "#ffffff",
+                      "surface-bright": "#faf9f6",
+                      "surface-variant": "#e3e2e0",
+                      "on-primary-fixed-variant": "#474746",
+                      "error-container": "#ffdad6",
+                      "outline": "#747878",
+                      "surface-container-high": "#e9e8e5",
+                      "on-secondary-fixed": "#380c00",
+                      "primary-fixed-dim": "#c8c6c5",
+                      "on-primary-fixed": "#1b1c1c",
+                      "surface-container-highest": "#e3e2e0",
+                      "primary-container": "#212121",
+                      "background": "#faf9f6",
+                      "secondary-fixed-dim": "#ffb59c",
+                      "on-primary-container": "#898888",
+                      "surface-container-low": "#f4f3f1",
+                      "inverse-on-surface": "#f2f1ee",
+                      "surface": "#faf9f6",
+                      "surface-container-lowest": "#ffffff",
+                      "error": "#ba1a1a",
+                      "secondary-container": "#fe7440",
+                      "primary": "#0a0a0a",
+                      "on-tertiary-container": "#ac7f52",
+                      "on-surface-variant": "#444748",
+                      "secondary-fixed": "#ffdbcf",
+                      "tertiary-container": "#341b00"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "gutter": "24px",
+                      "item-gap": "24px",
+                      "margin-mobile": "20px",
+                      "margin-desktop": "64px",
+                      "section-gap": "80px",
+                      "base": "8px"
+              },
+              "fontFamily": {
+                      "body-md": [
+                              "Montserrat"
+                      ],
+                      "headline-sm": [
+                              "Domine"
+                      ],
+                      "headline-md": [
+                              "Domine"
+                      ],
+                      "label-bold": [
+                              "Montserrat"
+                      ],
+                      "body-lg": [
+                              "Montserrat"
+                      ],
+                      "caption": [
+                              "Montserrat"
+                      ],
+                      "display-lg-mobile": [
+                              "Domine"
+                      ],
+                      "display-lg": [
+                              "Domine"
+                      ]
+              },
+              "fontSize": {
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "24px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "32px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "40px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "label-bold": [
+                              "14px",
+                              {
+                                      "lineHeight": "20px",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "28px",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "caption": [
+                              "12px",
+                              {
+                                      "lineHeight": "16px",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "36px",
+                              {
+                                      "lineHeight": "42px",
+                                      "fontWeight": "700"
+                              }
+                      ],
+                      "display-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "56px",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "700"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .paper-texture {
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+        }
+        .ink-border {
+            border: 1px solid #D4A373;
+        }
+        .honey-oak {
+            color: #D4A373;
+        }
+        .pit-black {
+            background-color: #212121;
+        }
+        .ember-red {
+            color: #B7410E;
+        }
+        .ember-red-bg {
+            background-color: #B7410E;
+        }
+        .honey-oak-border {
+            border-color: #D4A373;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md font-body-md paper-texture">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 flex justify-between items-center px-gutter py-4 bg-background dark:bg-on-surface max-w-7xl mx-auto border-b-2 border-outline-variant dark:border-outline">
+<div class="font-headline-md text-headline-md font-bold text-on-background dark:text-surface-bright tracking-tighter">
+            Ol' Smokey's
+        </div>
+<div class="hidden md:flex items-center gap-item-gap">
+<a class="text-on-surface-variant dark:text-surface-variant font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-container transition-colors uppercase" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-fixed-dim font-bold border-b-2 border-secondary font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-container transition-colors uppercase translate-y-px transition-all duration-100" href="#">Menu</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-container transition-colors uppercase" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-label-bold text-label-bold hover:text-secondary dark:hover:text-secondary-container transition-colors uppercase" href="#">Contact</a>
+</div>
+<button class="pit-black text-on-primary font-label-bold text-label-bold px-6 py-3 uppercase tracking-wider hover:bg-[#B7410E] transition-colors rounded">
+            Order Online
+        </button>
+</nav>
+<!-- Main Content -->
+<main class="pt-[100px] md:pt-[120px] pb-section-gap px-margin-mobile md:px-margin-desktop max-w-[1200px] mx-auto">
+<!-- Hero Section -->
+<section class="relative w-full h-[300px] md:h-[400px] mb-section-gap flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center w-full h-full z-0" data-alt="A striking close-up photograph of a premium smoked brisket sandwich resting on weathered oak butcher paper. The lighting is dramatic, high-contrast, emphasizing the charred bark of the meat against a deep pit-black background. A rustic, modern culinary aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCDlfBWqxkHn7nRkbUOLDDMdLs_q_SKwoVE3cuA0W4u2dg2b86VoD_Hf2WEsnYX3IZR5_xGf3uhMMlSqHsD4TVFiThdHoFhRlodTx9qYlAXl9sez1N0ppt2C_5GdLkhbNhtG-IiMM9kZGhdYNctEB7uAqHLBq8U3iFapSb8lWVNbuneh7IP_Vbj_2aqarAejHsi4QYDS-PpwSJ_eblPgMW1YulEREw2H0HTpOkSvyqYsI0o7uWxY5qtwA')"></div>
+<div class="absolute inset-0 bg-black/60 z-10"></div>
+<div class="relative z-20 text-center">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-surface-bright mb-4 drop-shadow-md">The Menu</h1>
+<p class="font-body-lg text-body-lg text-surface-variant max-w-2xl mx-auto">Smoked low and slow. Served hot and fast.</p>
+</div>
+</section>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-item-gap md:gap-x-[40px] md:gap-y-section-gap">
+<!-- Left Column: Mains -->
+<div class="md:col-span-8 flex flex-col gap-section-gap">
+<!-- Signature Steak Sandwiches -->
+<section>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">local_fire_department</span>
+<h2 class="font-headline-md text-headline-md text-on-background">Signature Steak Sandwiches</h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-item-gap">
+<!-- Item -->
+<div class="bg-surface-container-lowest ink-border relative group hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Gourmet sirloin Philly cheesesteak" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBV29rZbG0kAXt2jhKZvmFBbGGL0DHWVJmtjFwQYgshxCV_Tx3clILqmLdY27Gp4_Zvo96mfJpcwFDUOC3R-D_7PSAVpWHg44AIq8msp2IusfSsixvc9srwYhduXiw7iCDIup-35WwHPZBMlGZVOJSV1jSB2Oy_oeu86dl9tyyQcQLScL_BXJGS2PMsIISMLOU5Xd36RrqiCSzGw8oO1zVfM39U1XeVvllq435Zv-DbhaLpviNLysYPyg"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background">Sirloin Philly Cheesesteak</h3>
+<span class="font-label-bold text-label-bold ember-red">$20.70</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Shaved sirloin, grilled peppers, onions, melted provolone on a toasted hoagie.</p>
+</div>
+</div>
+<!-- Item -->
+<div class="bg-surface-container-lowest ink-border relative group hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+<div class="absolute -top-3 -right-3 w-12 h-12 rounded-full pit-black text-on-primary flex items-center justify-center font-label-bold text-[10px] uppercase text-center leading-tight shadow-md z-10 transform rotate-12">Pitmaster<br/>Choice</div>
+<div class="h-48 overflow-hidden">
+<img alt="Smoked sliced tri-tip" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCd5rFnEXbiCp6Tt-UzF-eY7wM7yZ4eCv2krWIMSA3evH20ws9SEMAguDxSDY4USoXi5hxTQI6IjGfmwdTil6xP6-ZVEbDFzMj2g43M7LevBeBX0CocY30o_snBBKuFnkUrNAX97a6WKGqEeLYUyvWOHEWj8FOZxrG_tRSkAITrK3PeOrGB4VrCHK4a266sQHRGLw6pIdR-A91StBnh-b5EcMsPh0cQWD1afeOKLHNhDjnRxuH_iy8Ztw"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background">Tri-Tip</h3>
+<span class="font-label-bold text-label-bold ember-red">$23.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Smoked sliced tri-tip, house BBQ sauce, crispy onions on an artisan bun.</p>
+</div>
+</div>
+<!-- Item -->
+<div class="bg-surface-container-lowest p-6 ink-border relative group hover:shadow-lg transition-shadow">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background">Cold Tri-Tip</h3>
+<span class="font-label-bold text-label-bold ember-red">MP</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-4">Thinly sliced chilled tri-tip, horseradish aioli, arugula on sourdough.</p>
+</div>
+</div>
+</section>
+<!-- Burgers (1/3 lb) -->
+<section>
+<div class="flex items-center gap-4 mb-8">
+<span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">lunch_dining</span>
+<h2 class="font-headline-md text-headline-md text-on-background">Burgers <span class="font-body-md text-body-md text-on-surface-variant normal-case">(1/3 lb)</span></h2>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-item-gap">
+<div class="bg-surface-container-lowest ink-border relative group hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Western BBQ burger" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCVW5gdiCwxlMpM55ytwQh99oMXGFGPbF-XVqsBd1a5cReGKbDXtaISeodSvq9tAUI24lQFSEV-LirK-AC6r-SjSBzDeyI-jFFPuTdPSUz2eKveGp99DsiZ6BuXr1uml0dnXDZ7Q89PxZKeruw7MbRCdj5DhRpX5yLw6wbvJs_VgemM8VjkeK-f693g1tY6LWbhBU4sBCpKl5ALCVu970xFv_mMT_RiULIpH8sm1Bp8FbGjjI9F8m9sgQ"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background">Western Burger</h3>
+<span class="font-label-bold text-label-bold ember-red">$20.00</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Bacon, cheddar, onion rings, BBQ sauce.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest ink-border relative group hover:shadow-lg transition-shadow overflow-hidden flex flex-col">
+<div class="h-48 overflow-hidden">
+<img alt="Classic American cheeseburger" class="w-full h-full object-cover transition-all duration-300 group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXniEoG8ZtxZZ_GZ90SFTok2jKOMoaVJlolIKlkc-Hx3In1sDjHWAbO0Hdd8zDjVgQ8175hndwr6VeXxCD5YHVqLiQE15qChmQ8W_Q9ubdxbOAxIJGr6Kqk51zpJ4l5eSiAtVaoeY-gLrk2hbwm_-bF3REo1kgTX0bkBzqV371i9u-VmIqQijrhu1oPFVXr7mlohqNDtcxAQVhZQiOOnRFgHQTaJsQJWTj-0gbFLyMSmr8h_qUWZI0OA"/>
+</div>
+<div class="p-6">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background">All American</h3>
+<span class="font-label-bold text-label-bold ember-red">MP</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Lettuce, tomato, onion, pickles, american cheese.</p>
+</div>
+</div>
+<div class="bg-surface-container-lowest p-6 ink-border">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background">Smash Burger</h3>
+<span class="font-label-bold text-label-bold ember-red">$18.40</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Double smashed patties, grilled onions, special sauce.</p>
+</div>
+<div class="bg-surface-container-lowest p-6 ink-border">
+<div class="flex justify-between items-start mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-background">Bacon Burger</h3>
+<span class="font-label-bold text-label-bold ember-red">$20.70</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Thick-cut bacon, cheddar, lettuce, tomato.</p>
+</div>
+</div>
+</section>
+<!-- Chicken & Dogs -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-item-gap">
+<!-- Chicken -->
+<section>
+<h2 class="font-headline-md text-headline-md text-on-background mb-6">Chicken</h2>
+<div class="flex flex-col gap-4">
+<div class="border-b-2 border-outline-variant pb-4">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-[20px] text-on-background">Chicken Club</h3>
+<span class="font-label-bold text-label-bold ember-red">$20.70</span>
+</div>
+</div>
+<div class="border-b-2 border-outline-variant pb-4">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-[20px] text-on-background">Chicken Tenders Basket</h3>
+<span class="font-label-bold text-label-bold ember-red">$18.40</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 1/4lb Hot Dogs -->
+<section>
+<h2 class="font-headline-md text-headline-md text-on-background mb-6">1/4lb Hot Dogs</h2>
+<div class="flex flex-col gap-4">
+<div class="border-b-2 border-outline-variant pb-4">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-[20px] text-on-background">All Beef</h3>
+<span class="font-label-bold text-label-bold ember-red">MP</span>
+</div>
+</div>
+<div class="border-b-2 border-outline-variant pb-4">
+<div class="flex justify-between items-baseline">
+<h3 class="font-headline-sm text-[20px] text-on-background">Hot Link</h3>
+<span class="font-label-bold text-label-bold ember-red">MP</span>
+</div>
+</div>
+</div>
+</section>
+</div>
+</div>
+<!-- Right Column: Sides, Drinks, Kids -->
+<div class="md:col-span-4 flex flex-col gap-section-gap">
+<!-- Sides -->
+<section class="bg-surface-container-high p-8 ink-border">
+<h2 class="font-headline-md text-[28px] text-on-background mb-6 text-center border-b border-[#D4A373] pb-4">Sides</h2>
+<ul class="flex flex-col gap-4">
+<li class="flex justify-between items-center">
+<span class="font-headline-sm text-[18px] text-on-background">French Fries</span>
+<span class="font-label-bold text-label-bold ember-red">$6.90</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="font-headline-sm text-[18px] text-on-background">Garlic Fries</span>
+<span class="font-label-bold text-label-bold ember-red">$8.05</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="font-headline-sm text-[18px] text-on-background">Onion Rings</span>
+<span class="font-label-bold text-label-bold ember-red">$9.20</span>
+</li>
+</ul>
+</section>
+<!-- Sweet Treats & Beverages -->
+<section class="pit-black p-8 text-on-primary">
+<h2 class="font-headline-md text-[28px] honey-oak mb-6 text-center border-b border-[#D4A373] pb-4">Sweets &amp; Drinks</h2>
+<div class="mb-6">
+<h3 class="font-label-bold text-label-bold text-surface-variant uppercase tracking-widest mb-3">Sweet Treats</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between items-center">
+<span class="font-headline-sm text-[18px] text-surface-bright">Milkshakes</span>
+<span class="font-label-bold text-label-bold honey-oak">$10.00</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="font-headline-sm text-[18px] text-surface-bright">Hawaiian Shaved Ice</span>
+<span class="font-label-bold text-label-bold honey-oak">$8.05</span>
+</li>
+</ul>
+</div>
+<div>
+<h3 class="font-label-bold text-label-bold text-surface-variant uppercase tracking-widest mb-3">Beverages</h3>
+<ul class="flex flex-col gap-3">
+<li class="flex justify-between items-center">
+<span class="font-headline-sm text-[18px] text-surface-bright">Root Beer</span>
+</li>
+<li class="flex justify-between items-center">
+<span class="font-headline-sm text-[18px] text-surface-bright">Sarsaparilla</span>
+</li>
+</ul>
+</div>
+</section>
+<!-- Kids Section -->
+<section class="border-2 border-outline p-6 text-center">
+<span class="material-symbols-outlined text-secondary text-4xl mb-2" style="font-variation-settings: 'FILL' 1;">child_care</span>
+<h2 class="font-headline-sm text-headline-sm text-on-background mb-2">Kids / Small Eaters</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Ask about our smaller portions perfect for lighter appetites.</p>
+</section>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-gutter flex flex-col md:flex-row justify-between items-start gap-item-gap bg-primary dark:bg-surface-container-highest text-on-primary dark:text-on-surface font-body-md text-body-md">
+<div class="font-headline-sm text-headline-sm text-primary-fixed">
+            Ol' Smokey's - Caboose
+        </div>
+<div class="flex flex-col md:flex-row gap-8">
+<div class="flex flex-col gap-2">
+<span class="font-label-bold text-label-bold text-primary-fixed-dim uppercase">Visit Us</span>
+<span class="text-primary-fixed">Hours: Open until 8 PM</span>
+<span class="text-primary-fixed">Yokuts Valley, CA</span>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-bold text-label-bold text-primary-fixed-dim uppercase">Contact</span>
+<a class="text-primary-fixed hover:text-secondary-container transition-colors outline-none focus:underline" href="tel:+15593477314">+1 559-347-7314</a>
+</div>
+<div class="flex flex-col gap-2">
+<span class="font-label-bold text-label-bold text-primary-fixed-dim uppercase">Social</span>
+<a class="text-primary-fixed hover:text-secondary-container transition-colors outline-none focus:underline" href="#">Facebook</a>
+<a class="text-primary-fixed hover:text-secondary-container transition-colors outline-none focus:underline" href="#">Instagram</a>
+</div>
+</div>
+<div class="text-primary-fixed-dim font-caption text-caption">
+            © 2024 Ol' Smokey's - Caboose. Yokuts Valley, CA
+        </div>
+</footer>
+</body></html>
