@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { apiUrl } from "../lib/api.js";
 
 const MAP_QUERY = "Yokuts Valley, CA 93675, United States";
 const MAP_EMBED_SRC = `https://www.google.com/maps?q=${encodeURIComponent(MAP_QUERY)}&output=embed`;
@@ -15,7 +16,7 @@ export default function Contact() {
     e.preventDefault();
     setStatus({ state: "sending", error: "" });
     try {
-      const res = await fetch("/api/contact", {
+      const res = await fetch(apiUrl("/api/contact"), {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(form)

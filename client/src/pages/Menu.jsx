@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { sandwiches, burgers, chicken, hotdogs, sides, sweets, beverages } from "../data/menuFallback.js";
+import { apiUrl } from "../lib/api.js";
 
 function bySection(apiItems, sectionName, fallback) {
   const matches = apiItems.filter((i) => i.section === sectionName);
@@ -10,7 +11,7 @@ export default function Menu() {
   const [apiItems, setApiItems] = useState([]);
 
   useEffect(() => {
-    fetch("/api/menu")
+    fetch(apiUrl("/api/menu"))
       .then((res) => (res.ok ? res.json() : Promise.reject()))
       .then((data) => setApiItems(data))
       .catch(() => setApiItems([]));

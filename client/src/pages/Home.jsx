@@ -23,7 +23,7 @@ const favorites = [
     price: "$20.70",
     desc: "Shaved sirloin, grilled peppers, onions, melted provolone on a toasted hoagie.",
     image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1VThIt6zwiX5_0j8KrQBtQ8kNFhnvLXLRykRxUtDaoaMeetfCGF7R5pQABKy-_WDmzBbeMPHZmAcnhsCrNYs--9e2d7X-fOo-fUUzjyQv8ONw_TLRndc_HmPRtZpt9h017CZM3rx7x8TRY42zA1X4R_lljLGsuZ3k8FS0rTRlasPDAjsGuWTwGcrTwb74zqDWDsmY5WgLLOHNjL9AKOGFwgT0Z-rw6rQnasGYhyN1uTQ_Y-8zNcblXRqos"
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuBV29rZbG0kAXt2jhKZvmFBbGGL0DHWVJmtjFwQYgshxCV_Tx3clILqmLdY27Gp4_Zvo96mfJpcwFDUOC3R-D_7PSAVpWHg44AIq8msp2IusfSsixvc9srwYhduXiw7iCDIup-35WwHPZBMlGZVOJSV1jSB2Oy_oeu86dl9tyyQcQLScL_BXJGS2PMsIISMLOU5Xd36RrqiCSzGw8oO1zVfM39U1XeVvllq435Zv-DbhaLpviNLysYPyg"
   },
   {
     name: "Tri-Tip",
@@ -31,14 +31,14 @@ const favorites = [
     desc: "Smoked sliced tri-tip, house BBQ sauce, crispy onions on an artisan bun.",
     badge: true,
     image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1UXIRuTUbUjxzUC0ZkNyWKqwQcy7FNn7gKW-3Sm5qmHsQODASxOxMtUmcI5u1QV9TxT-gmJv2d3Gdt18LRWp1gesBwhzXOkGcq3d6JdEqNwqDxA-9NNrlkkVcnttCxCMS0vnxzliofuFFSt6NBX1Mh7VCR5y4Z6UmUYnjBpW_kqRPeuFYX3bodi1x0VfRl4X_awMwfNZeZhLFM3IbLHNf3G7vK2SR_Ed3HistMBwtBYr9BnP2dKdhIs8gfw"
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCd5rFnEXbiCp6Tt-UzF-eY7wM7yZ4eCv2krWIMSA3evH20ws9SEMAguDxSDY4USoXi5hxTQI6IjGfmwdTil6xP6-ZVEbDFzMj2g43M7LevBeBX0CocY30o_snBBKuFnkUrNAX97a6WKGqEeLYUyvWOHEWj8FOZxrG_tRSkAITrK3PeOrGB4VrCHK4a266sQHRGLw6pIdR-A91StBnh-b5EcMsPh0cQWD1afeOKLHNhDjnRxuH_iy8Ztw"
   },
   {
     name: "Western Burger",
     price: "$20.00",
     desc: "Bacon, cheddar, onion rings, BBQ sauce.",
     image:
-      "https://lh3.googleusercontent.com/aida/AEtjO1UCMyhNwO2-LoM708B3ZRumfCIxrnz8kdwToI_RH-ooBJ5sV7ApuoTVLNv0bANwAHI7JXHt2RXbszVbFu45KQ21TRCRxARjwpLF5z-Xbs97hmiAGkZhlajoCu9Wi-hiSoGmidjebPUio59D6Rma51bRmxoIgNUqD5-EcQhBa3HeyWtk83X9VmUneP-uZ1YDXFirZiTmw0M8inG35MShV9jycafVlMg_61f3S9-bZIUxSGT5YbFQuQB5s8rZ"
+      "https://lh3.googleusercontent.com/aida-public/AB6AXuCVW5gdiCwxlMpM55ytwQh99oMXGFGPbF-XVqsBd1a5cReGKbDXtaISeodSvq9tAUI24lQFSEV-LirK-AC6r-SjSBzDeyI-jFFPuTdPSUz2eKveGp99DsiZ6BuXr1uml0dnXDZ7Q89PxZKeruw7MbRCdj5DhRpX5yLw6wbvJs_VgemM8VjkeK-f693g1tY6LWbhBU4sBCpKl5ALCVu970xFv_mMT_RiULIpH8sm1Bp8FbGjjI9F8m9sgQ"
   }
 ];
 
