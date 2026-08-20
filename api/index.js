@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { createApp } from "../app.js";
+import { createApp } from "../server/app.js";
 
 let connectionPromise = null;
 
